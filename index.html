@@ -4,40 +4,56 @@
   <head>
     <meta charset="UTF-8">
     <title>CatPhotoApp</title>
+    <link href="cats.css" rel="stylesheet"/>
   </head>
   <body>
     <main>
       <h1>CatPhotoApp</h1>
-      <section>
+
+      <section class="photos">
         <h2>Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
         <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back." class="picture"></a>
+        
+
       </section>
-      <section>
+
+      <section class="header">
         <h2>Cat Lists</h2>
+      </section>
+
+      <section class="cats">
+
+      <section class="list">
+        
         <h3>Things cats love:</h3>
         <ul>
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
+          <li>Cat nip</li>
+          <li>Laser pointers</li>
+          <li>Lasagna</li>
         </ul>
         <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate." class="picture">
           <figcaption>Cats <em>love</em> lasagna.</figcaption>  
         </figure>
+      </section>
+      <section class="list">
         <h3>Top 3 things cats hate:</h3>
         <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
+          <li>Flea treatment</li>
+          <li>Thunder</li>
+          <li>Other cats</li>
         </ol>
         <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field." class="picture">
           <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
         </figure>
-      </section>
-      <section>
+        </section>
+
+        </section>
+    
+      <section class="form">
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
           <fieldset>
@@ -51,8 +67,10 @@
             <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
             <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
           </fieldset>
+          <div class="field">
           <input type="text" name="catphotourl" placeholder="cat photo URL" required>
           <button type="submit">Submit</button>
+        </div>
         </form>
       </section>
     </main>
