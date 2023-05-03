@@ -45,17 +45,18 @@ border: 1px solid;
 
 footer{ text-align: center;}
 
-@media (min-width : 960px)
-
-.cats {display: flex;
-}
-
 fieldset {border: 0em;}
 .field {
     
     padding: 0.5em;
     margin: 0.5em;
     text-align: center;
+}
+
+@media (min-width : 960px) {
+
+.cats {display: flex;
+}
 }
 
  
